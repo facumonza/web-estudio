@@ -3,65 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Document</title>
+    <title>SERVICIOS</title>
 </head>
 <body>
     <header>
         <div>
             <a href="../index.html">
-                <img src="" alt="Logo de la empresa" class="logo">
+                <img class="img-logo" src="../imagenes/logo.png" alt="Logo de la empresa" class="logo">
             </a>
         </div>
         <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">
-                            HOME
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">
-                            NOSOTROS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../paginas/servicios.html">
-                            SERVICIOS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../paginas/proyectos.html">
-                            PROYECTOS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../paginas/contacto.html">
-                            CONTACTO
-                        </a>
-                    </li>
-                </ul>          
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                            <a class="nav-link" href="./contacto.html"">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <h2>SERVICIOS</h2>
-
-    <div class="proyecto">
-        <img src="../imagenes/loading.jpg" alt="" class="img-proyecto">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quisquam aut ipsum labore exercitationem nobis excepturi sint quia quibusdam dolor voluptate velit qui, quas praesentium voluptatum obcaecati, nemo commodi ab.</p>
-        <img src="../imagenes/loading.jpg" alt="" class="img-proyecto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda possimus consequuntur iusto natus quasi laborum deserunt ea alias, enim illum dolorem culpa, minima tempora dolore eveniet nostrum maxime quas!</p>
+    <div class="absolute">
+        <h1 class="item-absolute-servicios">SERVICIOS</h1>
+        <img src="../imagenes/fondo-servicios.jpg" alt="servicios" class="foto-fondo">
     </div>
 
-    <div class="proyecto">
-        <img src="../imagenes/loading.jpg" alt="" class="img-proyecto">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quisquam aut ipsum labore exercitationem nobis excepturi sint quia quibusdam dolor voluptate velit qui, quas praesentium voluptatum obcaecati, nemo commodi ab.</p>
-        <img src="../imagenes/loading.jpg" alt="" class="img-proyecto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda possimus consequuntur iusto natus quasi laborum deserunt ea alias, enim illum dolorem culpa, minima tempora dolore eveniet nostrum maxime quas!</p>
-    </div>
 
+    <main class="servicios">
+        <div class="div-generico">
+            <img src="../imagenes/interior.png" alt="">
+            <h3 class="tipo-servicio">Diseño de interiores</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div>
+        <div class="div-generico">
+            <img src="../imagenes/refacciones.png" alt="">
+            <h3 class="tipo-servicio">Refacciones</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div>
+        <div class="div-generico">
+            <img src="../imagenes/construccion.png" alt="">
+            <h3 class="tipo-servicio">Construccion</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div>
+        <div class="div-generico">
+            <img src="../imagenes/consulta.png" alt="">
+            <h3 class="tipo-servicio">Asesoría pesonalizada</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div>
+        <div class="div-generico">
+            <img src="../imagenes/plano.png" alt="">
+            <h3 class="tipo-servicio">Planos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div><div class="div-generico">
+            <img src="../imagenes/venta.png" alt="">
+            <h3 class="tipo-servicio">Venta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam distinctio animi accusantium? Corrupti nam magni, atque cum tempora beatae </p>
+        </div>
+    </main>
 
 
     <footer>
@@ -80,5 +89,6 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

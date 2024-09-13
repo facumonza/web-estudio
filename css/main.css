@@ -6,6 +6,7 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
 }
 
 header{
@@ -29,12 +30,35 @@ header div nav ul li {
     
 }
 
+.img-logo{
+    width: 40%;
+    padding-left: 30px;
+}
+
+.navbar{
+    background-color: rgb(162, 246, 246);
+}
+
+
+.navbar-toggler{
+    background-color: whitesmoke;
+    border: solid 2px;
+}
+
 .absolute{
     position: relative;
 }
 
 .item-absolute {
     position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.item-absolute-servicios {
+    color: whitesmoke;
+    position: absolute;
+    width: 25%;
     top: 50px;
     left: 30px;
 }
@@ -106,7 +130,47 @@ p{
     text-align: center;
 }
 
+.servicios{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 1rem;
+}
 
+
+main .div-generico{
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+main .div-generico img{
+    width: 13%;
+}
+
+.tipo-servicio{
+    padding: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    .servicios{
+        padding: 2rem 6rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 5rem;
+        row-gap: 5rem;
+    }
+    main .div-generico img{
+        width: 20%;
+    }
+}
 
 
 /* PROYECTOS */
