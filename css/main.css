@@ -10,8 +10,8 @@ body{
 }
 
 header{
-    background-color: rgb(162, 246, 246);
-    height: 90px;
+    background-color: rgb(179, 236, 236);
+    height: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -30,13 +30,15 @@ header div nav ul li {
     
 }
 
-.img-logo{
-    width: 40%;
-    padding-left: 30px;
+
+
+.logo {
+    margin-left: 20px;
+    width: 15%;
 }
 
 .navbar{
-    background-color: rgb(162, 246, 246);
+    background-color: rgb(179, 236, 236);
 }
 
 
@@ -50,21 +52,18 @@ header div nav ul li {
 }
 
 .item-absolute {
-    position: absolute;
-    top: 50px;
-    left: 30px;
-}
-
-.item-absolute-servicios {
-    color: whitesmoke;
+    color: rgb(27, 25, 25);
     position: absolute;
     width: 25%;
     top: 50px;
     left: 30px;
 }
 
+
+
 .foto-fondo{
     width: 100%;
+    height: 100vh;
 }
 
 main h3 {
@@ -74,7 +73,7 @@ main h3 {
 
 
 footer {height: 90px;
-    background-color:rgb(162, 246, 246);
+    background-color:rgb(179, 236, 236);
     padding: 2px;
     display: flex;
     justify-content: space-between;
@@ -82,12 +81,13 @@ footer {height: 90px;
     border-top: solid 1px;
     }
 
-.logo {
-    margin-left: 20px;
-}
+
 
 .redes {
     margin: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 
@@ -152,7 +152,7 @@ main .div-generico{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 main .div-generico img{
-    width: 13%;
+    width: 25%;
 }
 
 .tipo-servicio{
@@ -168,8 +168,10 @@ main .div-generico img{
         row-gap: 5rem;
     }
     main .div-generico img{
-        width: 20%;
+        width: 15%;
+        margin: 1rem;
     }
+    
 }
 
 
@@ -188,6 +190,7 @@ main .div-generico img{
 }
 
 .img-proyecto{
+    width: 30rem;
     border: solid;
     border-radius: 1px;
     margin: 10px;
