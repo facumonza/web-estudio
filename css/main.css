@@ -47,7 +47,7 @@ header div nav ul li {
 .logo {
     display: flex;
     margin-left: 20px;
-    width: 15%;
+    width: 20%;
     height: auto;
 }
 
@@ -122,10 +122,14 @@ h2{
 /* NOSOTROS */
 
 .nosotros {
-    padding: 50px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2,1fr);
+    row-gap: 1rem;
 }
 
 p{
@@ -133,25 +137,24 @@ p{
 }
 
 .dato {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5rem;
     display: flex;
     align-items: center;
 }
 
-.nosotros-img{
-    border: solid;
-    border-radius: 2px;
+.div-equipo{
+    margin-right: 5%;
 }
 
 .equipo{
-    margin: 50px;
+    margin-left: 30px;
     text-align: start;
 }
 
 .img-equipo{
-    width: 500px;
+    width: 60vh;
     margin-left: 100px;
     border: solid;
     border-radius: 2px;
@@ -164,17 +167,56 @@ p{
 }
 
 .img-estudio{
-    width: 500px;
+    width: 60vh;
     margin-right: 100px;
     border: solid;
     border-radius: 2px;
 }
+
+@media screen and (max-width: 1024px){
+    .nosotros{
+        margin: 0px;
+    }
+    .dato{
+        margin: 30px 0px 30px 0px;
+        width: 70vh;
+        align-items: center;
+        background-color: white;
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .equipo{
+        margin: 1rem;
+        text-align: center;
+    }
+    .img-equipo{
+        margin: 0px;
+        width: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .estudio{
+        margin: 1rem;
+        text-align: center;
+    }
+    .img-estudio{
+        margin: 0px;
+        width: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 /* SERVICIOS */
 
 .servicios{
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .servicios{
@@ -208,7 +250,7 @@ main .div-generico img{
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     .servicios{
         padding: 2rem 6rem;
         grid-template-columns: repeat(2, 1fr);
@@ -236,6 +278,10 @@ main .div-generico img{
 
 
 /* PROYECTOS */
+
+.proyectos{
+    margin: 50px;
+}
 
 .num-proyecto {
     margin-left: 70px;
