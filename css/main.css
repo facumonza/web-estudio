@@ -61,6 +61,8 @@ header div nav ul li {
     border: solid 2px;
 }
 
+/* HOME */
+
 .absolute{
     position: relative;
 }
@@ -73,24 +75,39 @@ header div nav ul li {
     left: 30px;
 }
 
-
-
 .foto-fondo{
     width: 100%;
     height: auto;
 }
 
+.home{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px outset black;
+
+}
+
 .h-home {
     text-align: center;
-    padding-top: 100px;
-    padding-right: 400px;
-    padding-left: 400px;
+    padding: 5% 15% 5% 15%;
+}
+
+.img-home{
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .p-home{
     font-style: oblique;
     text-align: center;
-    padding: 100px 300px 100px 300px;
+    padding: 5% 15% 5% 15%;
 }
 
 footer {height: 90px;
@@ -108,7 +125,7 @@ footer {height: 90px;
     margin: 50px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 
@@ -284,20 +301,26 @@ main .div-generico img{
 }
 
 .num-proyecto {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: 600;
     border-bottom: solid black;
 }
 
 .proyecto{
-    margin: 50px;
-    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (1, 1fr);
+    row-gap: 1rem;
 }
 
 .img-proyecto{
-    width: 30rem;
-    height: 30rem;
+    width: 50vh;
+    height: auto;
     border: solid;
     border-radius: 1px;
     margin: 10px;
@@ -314,16 +337,43 @@ main .div-generico img{
     font-weight: 600;
 }
 
+.galeria{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .proyecto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 1rem;
+    }
+    .img-proyecto{
+        margin: 5px;
+        width: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-proyecto:hover{
+        transform: none;
+        border-radius: 0px;
+    }
+}
+
 
 
 /* CONTACTO */
 
 .contacto {
-    display: flex;               
-    justify-content: center; 
-    align-items: center;     
-    padding: 70px;
-    gap: 50px;                   
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (1, 1fr);
+    row-gap: 1rem;               
 }
 
 
@@ -360,8 +410,8 @@ form {
 }
 
 .formulario{
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .boton{
@@ -371,4 +421,23 @@ form {
 .boton:hover{
     transition: 0.5s;
     transform: scale(1.2, 1.2); 
+}
+
+@media screen and (max-width: 1024px){
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 1rem;
+    }
+    .mapa{
+        margin: 2rem;
+    }
+    .datos-contacto{
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
