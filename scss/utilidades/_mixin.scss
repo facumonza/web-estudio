@@ -1,0 +1,19 @@
+@mixin logo{
+    display: flex;
+    margin-left: 1rem;
+    width: 20%;
+    height: auto;
+}
+
+
+@mixin imagenes-nosotros{
+    margin: 0px;
+    width: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+@mixin info-nosotros{
+    margin: 1rem;
+    text-align: center;
+}
+

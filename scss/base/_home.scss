@@ -1,0 +1,35 @@
+//import de variables
+@import "../utilidades/variables";
+//import de mixin
+@import "../utilidades/mixin";
+
+/* HOME */
+
+.home{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px outset black;
+    .h-home{
+        text-align: center;
+        padding: 5% 15% 5% 15%;
+    }
+    .img-home{
+        width: 30%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-home{
+        font-style: oblique;
+        text-align: center;
+        padding: 5% 15% 5% 15%;
+    }
+}
+
+
+

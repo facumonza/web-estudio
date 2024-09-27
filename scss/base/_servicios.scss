@@ -1,0 +1,60 @@
+//import de variables
+@import "../utilidades/variables";
+//import de mixin
+@import "../utilidades/mixin";
+
+/* SERVICIOS */
+
+.servicios{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    .div-generico{
+        text-align: center;
+        background-color: white;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        img{
+            width: 25%;
+        }
+        .tipo-servicio{
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .servicios{
+        padding: 2rem 6rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: 5rem;
+        row-gap: 5rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .servicios{
+        padding: 2rem 6rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 5rem;
+        row-gap: 5rem;
+        .div-generico{
+            img{
+                width: 15%;
+                margin: 1rem;
+            }
+        }
+    }    
+}
