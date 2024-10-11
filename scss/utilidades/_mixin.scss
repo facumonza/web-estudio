@@ -1,7 +1,6 @@
 @mixin logo{
     display: flex;
-    margin-left: 1rem;
-    width: 20%;
+    width: 15vw;
     height: auto;
 }
 
@@ -9,11 +8,13 @@
 @mixin imagenes-nosotros{
     margin: 0px;
     width: 50vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
 }
 @mixin info-nosotros{
     margin: 1rem;
     text-align: center;
+    justify-content: center;
 }
 

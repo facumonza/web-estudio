@@ -17,7 +17,7 @@
         .mapa{
             height: 400px;
             width: 400px;               
-            border: solid 2px; 
+            border: solid 3px; 
         }
     }
     div{
@@ -26,10 +26,10 @@
                 list-style: none;            
                 text-align: center;
                 padding: 0;
-                margin: 0;
+                margin: 2vw;
                 li{
-                    margin-top: 10px;
-                    margin-bottom: 10px;         
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;         
                     font-size: 20px;
                 }
             }
@@ -39,8 +39,8 @@
 .p-contacto{
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 form{
     text-align: center;
